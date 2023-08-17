@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+	<title>Response Form</title> 
+	
+<style>
+
+label
+ {
+ width: 120px;
+ float: left;
+ text-align: right;
+ padding-right:20px;
+ color: #666666;
+ margin-right: 0.5em;
+ display: block;
+ }
+
+ 
+input
+ {
+
+ color: #781351;
+  border: 1px solid #999;
+ }
+
+
+fieldset
+ {
+ border: 1px solid #999;
+ width: 30em;
+ background-color: #F0C9F3;
+ }
+
+ legend
+ {
+ color: #fff;
+ background: #003300 ;
+ border: 2px solid #999;
+ padding: 2px 6px
+ } 
+
+select{float:left;
+	margin-left:0;}
+input[type=submit]{margin-left:150px;}	
+textarea {
+resize:none;
+}	
+</style>
+
+</head>
+
+<body>
+
+<form action="ex1.php" method="post">
+<fieldset>
+<legend>Pick a Day</legend>
+ <p><label>please shoose a day:</label></p> <br>
+	<p><select name="Days">
+	<option value="Monday">Monday</option>
+	<option value="Tuesday">Tuesday</option>
+	<option value="Wedneseday">Wedneseday</option>
+    <option value="Thursday">Thursday</option>
+    <option value="Friday">Friday</option>
+    <option value="Saturday">Saturday</option>
+    <option value="Sunday">Sunday</option>
+	</select> </p><br>
+
+	<input type="submit" name="submit" value="CS:GO">
+</fieldset>
+</form>
+</div>
+</body>
+</html>

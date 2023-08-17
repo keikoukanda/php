@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+	<title>Car</title> 
+	
+<style>
+
+
+label
+ {
+ width: 120px;
+ float: left;
+ text-align: right;
+ padding-right:20px;
+ color: #666666;
+ margin-right: 0.5em;
+ display: block;
+ }
+
+ 
+input
+ {
+
+ color: #781351;
+  border: 1px solid #999;
+ }
+
+
+fieldset
+ {
+ border: 1px solid #999;
+ width: 30em;
+ background-color: #F0C9F3;
+ }
+
+ legend
+ {
+ color: #fff;
+ background: #003300 ;
+ border: 2px solid #999;
+ padding: 2px 6px
+ } 
+
+select{float:left;
+	margin-left:0;}
+input[type=submit]{margin-left:150px;}	
+p{clear:left}	
+</style>
+
+</head>
+<body>
+
+
+<form action="excercise4.php" method="post">
+<fieldset>
+<h1>Posh Cars</h1>
+	<p><label>Name</label> <input name="name"></p>	<p><label>Password</label> <input name="pass" type="password"></p>
+	<p><label>Comments</label> <textarea name="comments" rows="3" cols="30"></textarea></p>
+	<p><label>Car colour</label> 
+	<select name="colour">
+    <option value="Lime">Lime</option>
+    <option value="White">White</option>
+    <option value="Black">Black</option>
+	</select> </p>
+
+ 	<p><label>Extras</label>
+	<input type="checkbox" name="service[]" value="Window Doggy"> Window Doggy
+	<input type="checkbox" name="service[]" value="Mag wheels"> Mag wheels
+	<input type="checkbox" name="service[]" value="Leather steering"> Leather steering
+	<input type="checkbox" name="service[]" value="Fluffy Dice"> Fluffy Dice</p>
+
+	<input type="submit" name="submit" value="Send">
+</fieldset>
+</form>
+</div>
+</body>
+</html>
